@@ -66,6 +66,9 @@ https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C
 
 15) Recursion. How do get nth Fibonacci number?
 
+16) Destructuring
+https://learn.javascript.ru/destructuring
+
 ## Unit testing
 
 ## jQuery
