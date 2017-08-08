@@ -23,7 +23,7 @@
 
 2) Difference between get and post
 
-- GET: Requests data from a specified resource
+- GET - Requests data from a specified resource
 - POST - Submits data to be processed to a specified resource
 
 # HTML
@@ -31,6 +31,8 @@
 # CSS
 
 # JavaScript
+1) Context ( this ) in js.
+- 
 
 # OOP
 
