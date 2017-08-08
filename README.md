@@ -43,6 +43,53 @@ https://developer.mozilla.org/uk/docs/Web/JavaScript/Closures
 
 4) Hoisting
 https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%9F%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5
+
+5) Difference between var, let, const
+
+6) Strict vs non-strict
+
+7) Async js
+
+8) Event loop
+
+9) Promises
+
+10) Two-way /one-way data binding
+
+11) Algorithm complexity O(n), O(n^2), O(n*logn)
+
+## jQuery
+
+- Explain "chaining"
+- Explain "deferreds"
+- Name 4 different values you can pass to the jQuery method
+- What is the difference between .get(), [], and .eq()
+- What is the difference between .bind(), .live(), and .delegate()
+- Optimize this selector: $(".foo div#bar:eq(0)")
+- How can I select 20th div with jQuery?
+
+## Angular specific questions
+
+- Component vs directive
+- Factory vs service vs provider
+- Digest cycle
+- Why use $timeout and not setTimeout
+- Data sharing between controllers ($rootScope, eventEmiter, service)
+- Difference between ng-if and ng-show?
+- Dependency injection?
+- ng-bind
+- UI router
+- ng-app during dom load
+
+## React / Redux
+
+- Why React? What is the key feature?
+- Virtual DOM?
+- stateless component?
+- testing?
+
+## DB 
+
 # OOP
 1) How can you declare a class in Javascript?
 - using function as a constructor
