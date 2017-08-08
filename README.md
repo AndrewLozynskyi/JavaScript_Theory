@@ -32,7 +32,17 @@
 
 # JavaScript
 1) Context ( this ) in js.
-- 
+- In the global execution context (outside of any function), this refers to the global object, whether in strict mode or not.
+
+```bash
+console.log(this === window); // true
+
+this.b = "MDN";
+console.log(window.b) //"MDN"
+console.log(b) //"MDN"
+
+```
+
 
 # OOP
 
