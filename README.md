@@ -1,2 +1,17 @@
-# JavaScript_Theory
-JavaScript_Theory
+### Network
+
+### HTML
+
+### CSS
+
+### JavaScript
+
+#### OOP
+
+#### Design Patterns
+
+### ES6
+
+### React / Redux
+
+### Angular
