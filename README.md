@@ -29,6 +29,11 @@
 - PATCH
 	- The PATCH method applies partial modifications to a resource.
 
+2) Difference between get and post
+
+- GET: Requests data from a specified resource
+- POST - Submits data to be processed to a specified resource
+
 # HTML
 
 # CSS
