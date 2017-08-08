@@ -44,6 +44,47 @@ https://developer.mozilla.org/uk/docs/Web/JavaScript/Closures
 4) Hoisting
 https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%9F%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5
 # OOP
+1) How can you declare a class in Javascript?
+- using function as a constructor
+
+  ```
+  function Person(name) { this.name = name }
+  var person = new Person("Rafael");
+  person.name; // "Rafael"
+  ```
+
+- Class Literal notation
+
+  ```
+  var person = {  
+      name: "",
+      setName: function(name) {
+          this.name = name;
+      }
+  }
+  person.setName("Rafael");  
+  person.name; // "Rafael"
+  ```
+
+- Singleton through a function
+
+  ```
+  var person = new function() {  
+      this.setName = function(name) {
+          this.name = name;
+      }
+      this.sayHi = function() {
+          return "Hi, my name is " + this.name;
+      }
+  }
+  person.setName("Rafael");  
+  alert(person.sayHi()); // Hi, my name is Rafael 
+  ```
+- Constructors
+- Prototypes
+- What is **encapsulation**? *(Packing of data and functions into a single component)*
+- What is **polymorphism**? *(Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)*
+- Inheritance
 
 # Design Patterns
 
