@@ -94,6 +94,10 @@ https://learn.javascript.ru/destructuring
 - UI router
 - ng-app during dom load
 
+## ES6
+
+https://github.com/lukehoban/es6features
+
 ## React / Redux
 
 - Why React? What is the key feature?
@@ -148,6 +152,5 @@ https://learn.javascript.ru/destructuring
 
 # Design Patterns
 
-# ES6
 
-# React / Redux
+
