@@ -58,6 +58,16 @@ https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C
 
 11) Algorithm complexity O(n), O(n^2), O(n*logn)
 
+12) What are the primitive/native types exist?
+
+13) All primitives are immutable. What does this mean?
+
+14) How to find an element from an array? How it internally works?
+
+15) Recursion. How do get nth Fibonacci number?
+
+## Unit testing
+
 ## jQuery
 
 - Explain "chaining"
@@ -88,7 +98,7 @@ https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C
 - stateless component?
 - testing?
 
-## DB 
+# DB 
 
 # OOP
 1) How can you declare a class in Javascript?
