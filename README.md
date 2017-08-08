@@ -33,10 +33,10 @@
 # JavaScript
 1) Context ( this ) in js.
 
-```bash
+<!-- ```bash -->
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
-```
+<!-- ``` -->
 
 
 # OOP
