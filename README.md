@@ -33,12 +33,16 @@
 # JavaScript
 1) Context ( this ) in js.
 
-<!-- ```bash -->
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
-<!-- ``` -->
+2) Functions call, apply, bind
+http://getinstance.info/articles/javascript/call-apply-and-bind-functions/
 
+3) Closures
+https://developer.mozilla.org/uk/docs/Web/JavaScript/Closures
 
+4) Hoisting
+https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%9F%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5
 # OOP
 
 # Design Patterns
