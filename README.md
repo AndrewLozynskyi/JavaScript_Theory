@@ -85,15 +85,48 @@ https://stackoverflow.com/questions/34519889/can-anyone-explain-the-difference-b
 10) Algorithm complexity O(n), O(n^2), O(n*logn)
 
 11) What are the primitive/native types exist?
+https://stackoverflow.com/questions/16115512/understanding-javascript-immutable-variable
 
-12) All primitives are immutable. What does this mean?
+12) How to find an element from an array? How it internally works?
+  ```
+function findIndexByValue(arraytosearch, valuetosearch) {
+ 
+	for (var i = 0; i < arraytosearch.length; i++) {
+ 
+		if (arraytosearch[i] == valuetosearch) {
+			return i;
+		}
+	}
+		return null;
+}
+  ```
 
-13) How to find an element from an array? How it internally works?
+13) Recursion. How do get nth Fibonacci number?
+  ```
+function fibonacci(num) {
+  if (num <= 1) return 1;
 
-14) Recursion. How do get nth Fibonacci number?
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
+fibonacci(num);
+```
 
-15) Destructuring
+14) Destructuring
 https://learn.javascript.ru/destructuring
+
+15) Recursion. print from 1 to n.
+```
+function printNumbers(n){
+    var result;
+    if(n <= 1)
+        result = '1';
+    else
+        result = printNumbers(n-1) + n;
+    console.log(result);
+    return result;
+}
+printNumbers(n)
+```
 
 ## Unit testing
 
