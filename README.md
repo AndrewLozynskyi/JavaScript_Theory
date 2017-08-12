@@ -32,7 +32,12 @@
 # CSS
 - https://career.guru99.com/top-50-csscascading-style-sheet-interview-questions/
 - http://www.skilledup.com/articles/25-css-interview-questions-answers
+- https://career.guru99.com/top-17-sass-interview-questions/
+
 # JavaScript
+- https://career.guru99.com/top-85-javascript-interview-questions/
+- https://github.com/nishant8BITS/123-Essential-JavaScript-Interview-Question
+
 1) Context ( this ) in js.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
@@ -190,6 +195,7 @@ https://www.smashingmagazine.com/2012/06/introduction-to-javascript-unit-testing
 
 - https://www.codementor.io/angularjs/tutorial/angularjs-interview-questions-sample-answers
 - http://www.c-sharpcorner.com/article/top-50-angularjs-interview-questions-and-answers/
+- https://career.guru99.com/top-25-angular-js-interview-questions/
 
 
 ## ES6
@@ -202,6 +208,9 @@ https://github.com/lukehoban/es6features
 - Virtual DOM?
 - stateless component?
 - testing?
+
+- https://tylermcginnis.com/react-interview-questions/
+- https://www.codementor.io/reactjs/tutorial/5-essential-reactjs-interview-questions
 
 # DB 
 1) Які існують ключі в БВ
