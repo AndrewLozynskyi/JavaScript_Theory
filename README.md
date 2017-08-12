@@ -27,9 +27,11 @@
 - POST - Submits data to be processed to a specified resource
 
 # HTML
-
+- https://career.guru99.com/top-50-html-interview-questions/
+- https://www.codeproject.com/Articles/702051/important-HTML-Interview-questions-with-answe
 # CSS
-
+- https://career.guru99.com/top-50-csscascading-style-sheet-interview-questions/
+- http://www.skilledup.com/articles/25-css-interview-questions-answers
 # JavaScript
 1) Context ( this ) in js.
 
@@ -105,8 +107,7 @@ function findIndexByValue(arraytosearch, valuetosearch) {
   ```
 function fibonacci(num) {
   if (num <= 1) return 1;
-
-  return fibonacci(num - 1) + fibonacci(num - 2);
+  	return fibonacci(num - 1) + fibonacci(num - 2);
 }
 fibonacci(num);
 ```
@@ -118,10 +119,12 @@ https://learn.javascript.ru/destructuring
 ```
 function printNumbers(n){
     var result;
-    if(n <= 1)
+    if(n <= 1) {
         result = '1';
-    else
+    }
+    else{
         result = printNumbers(n-1) + n;
+    }
     console.log(result);
     return result;
 }
@@ -168,6 +171,10 @@ https://www.smashingmagazine.com/2012/06/introduction-to-javascript-unit-testing
 - Optimize this selector: $(".foo div#bar:eq(0)")
 - How can I select 20th div with jQuery?
 
+- https://www.toptal.com/jquery/interview-questions
+- https://www.tutorialspoint.com/jquery/jquery_interview_questions.htm
+- https://career.guru99.com/top-50-jquery-interview-questions/
+
 ## Angular specific questions
 
 - Component vs directive
@@ -180,6 +187,10 @@ https://www.smashingmagazine.com/2012/06/introduction-to-javascript-unit-testing
 - ng-bind
 - UI router
 - ng-app during dom load
+
+- https://www.codementor.io/angularjs/tutorial/angularjs-interview-questions-sample-answers
+- http://www.c-sharpcorner.com/article/top-50-angularjs-interview-questions-and-answers/
+
 
 ## ES6
 
