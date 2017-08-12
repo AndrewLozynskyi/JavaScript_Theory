@@ -165,6 +165,15 @@ https://github.com/lukehoban/es6features
 - testing?
 
 # DB 
+1) Які існують ключі в БВ
+ - Первинні і вторинні.
+ - Первинний ключ — це одне або кілька полів (стовпців), комбінація значень яких однозначно визначає кожний запис у таблиці. Первинний ключ не допускає значень Null і завжди повинен мати унікальний індекс. Первинний ключ використовується для зв’язування таблиці з зовнішніми ключами в інших таблицях.
+ - Вторинний ключ — це одне або кілька полів (стовпців) у таблиці, що містять посилання на поле або поля первинного ключа в іншій таблиці. Зовнішній ключ визначає спосіб об’єднання таблиць.
+2) Типи звязків в БД.
+ - Зв’язок "один-до-багатьох"
+ - Зв’язок "багато-до-багатьох"
+ - Зв’язок "один-до-одного"
+3) Запити
 
 # OOP
 1) How can you declare a class in Javascript?
@@ -211,7 +220,7 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ob
 Інкапсуляція - Способ комплектации данных и методов, которые используют данные.
 - What is **polymorphism**? *(Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)*
 Поліморфізм - Различные классы могут объявить один и тот же метод или свойство.
-- Inheritance
+- **Inheritance**
 Наслідування - Класс может наследовать характеристики от другого класса.
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 
