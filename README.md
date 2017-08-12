@@ -45,6 +45,30 @@ https://developer.mozilla.org/uk/docs/Web/JavaScript/Closures
 https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%9F%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5
 
 5) Difference between var, let, const
+const -- неможна переприсвоювати.
+
+let неможна переоголошувати, а var можна.
+let видимий тільки в тілі цилку, а var в цілій функції. 
+
+  ```
+  function exampleForLet() {
+  	i - invisible here
+  	for (let i = 0; i<10; i++){
+  		i - visible here
+  	}
+  	i - invisible here
+  }
+  ```
+
+  ```
+  function exampleForVar() {
+  	i - visible here
+  	for (var i = 0; i<10; i++){
+  		i - visible here
+  	}
+  	i - visible here
+  }
+  ```
 
 6) Strict vs non-strict
 
