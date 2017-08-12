@@ -127,9 +127,37 @@ function printNumbers(n){
 }
 printNumbers(n)
 ```
+16) Binaty search
+```
+function some(array, targetValue) {
+    var min = 0;
+    var max = array.length - 1;
+    var guess;
+
+    while(min <= max) {
+        guess = Math.floor((max + min) / 2);
+
+        if (array[guess] === targetValue) {
+            return guess;
+        }
+        else if (array[guess] < targetValue) {
+            min = guess + 1;
+        }
+        else {
+            max = guess - 1;
+        }
+
+    }
+
+    return -1;
+}
+some([1,2,3,4,5,6,7,8,9,10], 2); // 1
+```
+17) Base algirithm
+http://www.thatjsdude.com/interview/js1.html
 
 ## Unit testing
-
+https://www.smashingmagazine.com/2012/06/introduction-to-javascript-unit-testing/
 ## jQuery
 
 - Explain "chaining"
@@ -174,7 +202,7 @@ https://github.com/lukehoban/es6features
  - Зв’язок "багато-до-багатьох"
  - Зв’язок "один-до-одного"
 3) Запити
-
+http://bestwebit.biz.ua/w3c_1/sql.php
 # OOP
 1) How can you declare a class in Javascript?
 - using function as a constructor
