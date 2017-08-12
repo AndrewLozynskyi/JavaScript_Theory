@@ -205,9 +205,14 @@ https://github.com/lukehoban/es6features
   ```
 - Constructors
 - Prototypes
+
 - What is **encapsulation**? *(Packing of data and functions into a single component)*
+Інкапсуляція - Способ комплектации данных и методов, которые используют данные.
 - What is **polymorphism**? *(Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)*
+Поліморфізм - Различные классы могут объявить один и тот же метод или свойство.
 - Inheritance
+Наслідування - Класс может наследовать характеристики от другого класса.
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 
 # Design Patterns
 
