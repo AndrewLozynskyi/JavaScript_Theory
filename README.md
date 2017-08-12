@@ -44,9 +44,9 @@ https://developer.mozilla.org/uk/docs/Web/JavaScript/Closures
 4) Hoisting
 https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%9F%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5
 
-5) Difference between var, let, const
-const -- неможна переприсвоювати.
+5) Difference between var, let, const.
 
+const -- неможна переприсвоювати.
 let неможна переоголошувати, а var можна.
 let видимий тільки в тілі цилку, а var в цілій функції. 
 
@@ -71,26 +71,28 @@ let видимий тільки в тілі цилку, а var в цілій ф�
   ```
 
 6) Strict vs non-strict
+https://learn.javascript.ru/strict-mode
 
 7) Async js
+https://habrahabr.ru/post/282477/
 
-8) Event loop
+8) Promises
+https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
-9) Promises
+9) Two-way /one-way data binding
+https://stackoverflow.com/questions/34519889/can-anyone-explain-the-difference-between-reacts-one-way-data-binding-and-angula
 
-10) Two-way /one-way data binding
+10) Algorithm complexity O(n), O(n^2), O(n*logn)
 
-11) Algorithm complexity O(n), O(n^2), O(n*logn)
+11) What are the primitive/native types exist?
 
-12) What are the primitive/native types exist?
+12) All primitives are immutable. What does this mean?
 
-13) All primitives are immutable. What does this mean?
+13) How to find an element from an array? How it internally works?
 
-14) How to find an element from an array? How it internally works?
+14) Recursion. How do get nth Fibonacci number?
 
-15) Recursion. How do get nth Fibonacci number?
-
-16) Destructuring
+15) Destructuring
 https://learn.javascript.ru/destructuring
 
 ## Unit testing
