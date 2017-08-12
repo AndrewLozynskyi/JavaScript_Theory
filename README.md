@@ -213,6 +213,8 @@ https://github.com/lukehoban/es6features
 - https://www.codementor.io/reactjs/tutorial/5-essential-reactjs-interview-questions
 
 # DB 
+- https://www.guru99.com/mongodb-interview-questions.html
+- https://career.guru99.com/top-50-mysql-interview-questions-answers/
 1) Які існують ключі в БВ
  - Первинні і вторинні.
  - Первинний ключ — це одне або кілька полів (стовпців), комбінація значень яких однозначно визначає кожний запис у таблиці. Первинний ключ не допускає значень Null і завжди повинен мати унікальний індекс. Первинний ключ використовується для зв’язування таблиці з зовнішніми ключами в інших таблицях.
@@ -273,6 +275,7 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ob
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 
 # Design Patterns
+- http://www.tutorialspoint.com/design_pattern/design_pattern_interview_questions.htm
 
 
-
+https://github.com/MaximAbramchuck/awesome-interview-questions/blob/master/README.md#database-technologies
