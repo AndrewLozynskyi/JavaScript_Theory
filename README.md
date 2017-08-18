@@ -34,6 +34,66 @@
 - https://github.com/nishant8BITS/123-Essential-JavaScript-Interview-Question
 
 1) Context ( this ) in js.
+- 'this' відноситься до об'єкта, з якого він був викликаний.
+- В глобальному контексті this зсилається на глобальний обєкт незалжно чи строгий чи не строгий режим.
+```
+console.log(this === window); // true
+```
+- В межах функції значення this залежить від того, як викликається функція -- залежить від "use strict".
+```
+function f1(){
+  return this;
+}
+f1() // window
+```
+```
+function f2(){
+  "use strict"; // see strict mode
+  return this;
+}
+f2() // undefined;
+```
+Для того щоб передати значення this від одного кoнтекста віншому треба викристати call або apply
+
+- В стрілочних функціях this привязане до середовища в якому була створена функція.
+```
+var globalObject = this;
+var foo = (() => this);
+console.log(foo() === globalObject); // true
+```
+- В методі обєкта
+Коли функція викликається як метод обєкта, this прикймає значення обєкта відносно якого викликається метод.
+```
+var o = {
+  prop: 37,
+  f: function() {
+    return this.prop;
+  }
+};
+console.log(o.f()); // logs 37
+``` 
+- this в цепочці objects prototype
+```
+var o = {
+	f:function(){ 
+		return this.a + this.b; 
+	}
+};
+var p = Object.create(o);
+p.a = 1;
+p.b = 4;
+
+console.log(p.f()); // 5
+``` 
+- В конструкторі === Коли функція викристовується як конструкторі(з ключовим словом new), this звязаний з новим створенним обєктом.
+```
+function C(){
+  this.a = 37;
+}
+
+var o = new C();
+console.log(o.a); // logs 37
+``` 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
