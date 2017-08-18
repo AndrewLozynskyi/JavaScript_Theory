@@ -109,6 +109,51 @@ add.apply(o, [10, 20]); // 1 + 3 + 10 + 20 = 34
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 2) Functions call, apply, bind
+- call and apply, bind дозволяє встановити значення this для функції.
+
+- сall 
+```
+func.call(context, arg1, arg2, ...); // context = this
+``` 
+```
+var user = {
+  firstName: "Василий",
+  surname: "Петров",
+  patronym: "Иванович"
+};
+
+function showFullName(firstPart, lastPart) {
+  alert( this.firstPart + " " + this.lastPart );
+}
+
+// f.call(контекст, аргумент1, аргумент2, ...)
+showFullName.call(user, 'firstName', 'surname') // "Василий Петров"
+showFullName.call(user, 'firstName', 'patronym') // "Василий Иванович"
+``` 
+- apply 
+
+```
+func.apply(context, [arg1, arg2, ...]); // context = this
+``` 
+-- bind
+bind() дозволяє нам вказати силку обєкт зі значенням this, коли функція буде викликана.
+```
+var users = {
+  data: [
+      {name: 'John Smith'},
+      {name: 'Ellen Simons'}
+  ],
+
+   showFirst: function (event) {
+       console.log(this.data[0].name);
+   }
+}
+ 
+$('button').click(users.showFirst); // this.data is undefined
+$("button").click(users.showFirst.bind(users));
+``` 
+
+
 http://getinstance.info/articles/javascript/call-apply-and-bind-functions/
 
 3) Closures
