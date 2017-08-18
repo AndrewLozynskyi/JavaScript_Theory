@@ -152,15 +152,37 @@ var users = {
 $('button').click(users.showFirst); // this.data is undefined
 $("button").click(users.showFirst.bind(users));
 ``` 
-
-
 http://getinstance.info/articles/javascript/call-apply-and-bind-functions/
 
 3) Closures
+- Замикання -- це функції, які памятають середовище, в якому вони були створені. (область видимості функцій, змінних,...)
+
+```
+function init() {
+  var name = "Mozilla"; // name is a local variable created by init
+  function displayName() { // displayName() is the inner function, a closure
+    alert(name); // use variable declared in the parent function    
+  }
+  displayName();    
+}
+init();// Mozilla
+``` 
 https://developer.mozilla.org/uk/docs/Web/JavaScript/Closures
 
 4) Hoisting
 https://developer.mozilla.org/ru/docs/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%9F%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D0%B5
+```
+var x = 1; // Инициализируем x
+console.log(x + " " + y);  // y - undefined
+var y = 2;
+//код выше и код ниже одинаковые
+
+var x = 1; // Инициализируем x
+var y; // Объявляем y
+console.log(x + " " + y);  // y - undefined
+y = 2; // Инициализируем y
+``` 
+
 
 5) Difference between var, let, const.
 
@@ -193,14 +215,104 @@ https://learn.javascript.ru/strict-mode
 
 7) Async js
 https://habrahabr.ru/post/282477/
+```
+async function throwsValue() {
+    throw new Error('oops');
+}
+throwsValue()
+    .then((resolve) => {
+            console.log("resolve:" + resolve);
+        },
+        (reject) => {
+            console.log("reject:" + reject);
+        });
+//prints "reject:Error: oops"
+ ```
 
 8) Promises
 https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Promise
+```
+// Создаётся объект promise
+let promise = new Promise((resolve, reject) => {
+
+  setTimeout(() => {
+    // переведёт промис в состояние fulfilled с результатом "result"
+    resolve("result");
+  }, 1000);
+
+});
+
+// promise.then навешивает обработчики на успешный результат или ошибку
+promise
+  .then(
+    result => {
+      // первая функция-обработчик - запустится при вызове resolve
+      alert("Fulfilled: " + result); // result - аргумент resolve
+    },
+    error => {
+      // вторая функция - запустится при вызове reject
+      alert("Rejected: " + error); // error - аргумент reject
+    }
+  );
+ ```
 
 9) Two-way /one-way data binding
 https://stackoverflow.com/questions/34519889/can-anyone-explain-the-difference-between-reacts-one-way-data-binding-and-angula
+- фішка ангулара -- в One-way view не одновляється автоматично, треба писати код для оновлення данний в вюшці. В Two-way View апдейтиться автоматично.
 
 10) Algorithm complexity O(n), O(n^2), O(n*logn)
+
+- Швидкість алгоритму
+- O(n) - найти елемент в масиві 
+  ```
+function findIndexByValue(arraytosearch, valuetosearch) {
+ 
+	for (var i = 0; i < arraytosearch.length; i++) {
+ 
+		if (arraytosearch[i] == valuetosearch) {
+			return i;
+		}
+	}
+		return null;
+}
+  ```
+- O(n2) -- 2 цикли в функції (бульбашковий алгоритм)
+```
+function BubbleSort(A) {
+	var n = a.length - 1;
+	for ( var i = 0; i < n; i++ ) {
+		for ( var j = 0; j < n - i; j++ ) {
+			if ( A[j] > A[j+1] ) {
+				var t = A[j];
+				A[j] = A[j+1];
+				A[j+1] = t;
+			}
+		}
+	}
+}
+BubbleSort([3,5,2,1,7]);
+```
+- O(log n)
+```
+function BinarySearch(t, A){
+	var i = 0;
+	var j = A.length-1;
+	var k;
+	while (i <= j) {
+		k = Math.floor((i+j)/2);
+		if ( t === A[k] ){
+			return k;
+		} else if ( t < A[k] ) {
+			j = k - 1;
+		} else { 
+			i = k + 1; 
+		}
+	}
+	return false;
+}
+
+Binary Search(3, [1,2,3,4,5,6,7,8,9])
+```
 
 11) What are the primitive/native types exist?
 https://stackoverflow.com/questions/16115512/understanding-javascript-immutable-variable
