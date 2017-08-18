@@ -353,7 +353,7 @@ function printNumbers(n){
     else{
         result = printNumbers(n-1) + n;
     }
-    console.log(result);
+    //console.log(result);
     return result;
 }
 printNumbers(n)
