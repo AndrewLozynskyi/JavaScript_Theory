@@ -490,11 +490,12 @@ https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Ob
 - Prototypes
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
 - What is **encapsulation**? *(Packing of data and functions into a single component)*
-Інкапсуляція - Способ комплектации данных и методов, которые используют данные.
-- What is **polymorphism**? *(Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)*
-Поліморфізм - Различные классы могут объявить один и тот же метод или свойство.
-- **Inheritance**
-Наслідування - Класс может наследовать характеристики от другого класса.
+- Інкапсуляція – механізм, який поєднує дані та методи, що обробляють ці дані і захищає і те і інше від зовнішнього впливу або не вірного використання. Коли і методи і данні об’єднуються таким чином — створюється об’єкт.
+
+- Поліморфізм – властивість, яка дозволяє одне і те саме ім’я використовувати для вирішення декількох технічно різних задач.
+
+- Наслідування – процес, завдяки якому один об’єкт може придбати властивості іншого, тобто наслідувати властивість іншого обєкту і додавати риси характерні тільки для нього самого.
+
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 
 # Design Patterns
