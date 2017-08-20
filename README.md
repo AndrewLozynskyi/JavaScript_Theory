@@ -35,77 +35,40 @@
 
 1) Context ( this ) in js.
 - 'this' відноситься до об'єкта, з якого він був викликаний.
-- В глобальному контексті this зсилається на глобальний обєкт незалжно чи строгий чи не строгий режим.
+- 1) простий викрик функції 
 ```
-console.log(this === window); // true
-```
-- В межах функції значення this залежить від того, як викликається функція -- залежить від "use strict".
-```
-function f1(){
-  return this;
+function f() {
+    console.log(this === window); // true
 }
-f1() // window
+f();
+``` 
+- 2) В конструкторі
 ```
-```
-function f2(){
-  "use strict"; // see strict mode
-  return this;
+function f() {
+    this.x = 5;
+    console.log(this === window); // false
 }
-f2() // undefined;
-```
-Для того щоб передати значення this від одного кoнтекста віншому треба викристати call або apply
-
-- В стрілочних функціях this привязане до середовища в якому була створена функція.
-```
-var globalObject = this;
-var foo = (() => this);
-console.log(foo() === globalObject); // true
-```
-- В методі обєкта
-Коли функція викликається як метод обєкта, this прикймає значення обєкта відносно якого викликається метод.
+var o = new f();
+console.log(o.x === 5); // true
+``` 
+- 3) В методі обєкта
 ```
 var o = {
-  prop: 37,
-  f: function() {
-    return this.prop;
-  }
-};
-console.log(o.f()); // logs 37
-``` 
-- this в цепочці objects prototype
-```
-var o = {
-	f:function(){ 
-		return this.a + this.b; 
-	}
-};
-var p = Object.create(o);
-p.a = 1;
-p.b = 4;
-
-console.log(p.f()); // 5
-``` 
-- В конструкторі === Коли функція викристовується як конструкторі(з ключовим словом new), this звязаний з новим створенним обєктом.
-```
-function C(){
-  this.a = 37;
+    f: function() {
+        return this;
+    }
 }
-
-var o = new C();
-console.log(o.a); // logs 37
+console.log(o.f() === o); // true
 ``` 
-- call and apply
+- 4) В методі apply, call
 ```
-function add(c, d){
-  return this.a + this.b + c + d;
+function f() {
 }
-var o = {a:1, b:3};
-
-add.call(o, 5, 7); // 1 + 3 + 5 + 7 = 16
-
-add.apply(o, [10, 20]); // 1 + 3 + 10 + 20 = 34
+f.call(window); // this внутри функции f будет ссылаться на объект window
+f.call(f); //this внутри f будет ссылаться на f
 ``` 
 
+https://habrahabr.ru/post/149516/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 2) Functions call, apply, bind
