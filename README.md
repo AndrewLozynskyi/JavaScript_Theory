@@ -542,7 +542,21 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ob
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 
 # Design Patterns
-- http://www.tutorialspoint.com/design_pattern/design_pattern_interview_questions.htm
+- https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+
+- Constructor Pattern
+- Module Pattern
+- Revealing Module Pattern
+- Singleton Pattern
+- Observer Pattern
+- Mediator Pattern
+- Prototype Pattern
+- Command Pattern
+- Facade Pattern
+- Factory Pattern
+- Mixin Pattern
+- Decorator Pattern
+- Flyweight Pattern
 
 
 https://github.com/MaximAbramchuck/awesome-interview-questions/blob/master/README.md#database-technologies
