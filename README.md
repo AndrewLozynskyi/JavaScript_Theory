@@ -264,7 +264,7 @@ https://stackoverflow.com/questions/34519889/can-anyone-explain-the-difference-b
 
 - Швидкість алгоритму
 - O(n) - найти елемент в масиві 
-  ```
+```
 function findIndexByValue(arraytosearch, valuetosearch) {
  
 	for (var i = 0; i < arraytosearch.length; i++) {
@@ -275,7 +275,7 @@ function findIndexByValue(arraytosearch, valuetosearch) {
 	}
 		return null;
 }
-  ```
+```
 - O(n2) -- 2 цикли в функції (бульбашковий алгоритм)
 ```
 function BubbleSort(A) {
@@ -318,7 +318,7 @@ Binary Search(3, [1,2,3,4,5,6,7,8,9])
 https://stackoverflow.com/questions/16115512/understanding-javascript-immutable-variable
 
 12) How to find an element from an array? How it internally works?
-  ```
+```
 function findIndexByValue(arraytosearch, valuetosearch) {
  
 	for (var i = 0; i < arraytosearch.length; i++) {
@@ -329,15 +329,40 @@ function findIndexByValue(arraytosearch, valuetosearch) {
 	}
 		return null;
 }
-  ```
+```
 
 13) Recursion. How do get nth Fibonacci number?
-  ```
+```
 function fibonacci(num) {
   if (num <= 1) return 1;
   	return fibonacci(num - 1) + fibonacci(num - 2);
 }
 fibonacci(num);
+```
+
+13.1) quikSort algoritm
+```
+function quicksort(array) {
+  if (array.length <= 1) {
+    return array;
+  }
+
+  var pivot = array[0];
+  
+  var left = []; 
+  var right = [];
+
+  for (var i = 1; i < array.length; i++) {
+    array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
+  }
+
+  return quicksort(left).concat(pivot, quicksort(right));
+};
+
+var unsorted = [23, 45, 16, 37, 3, 99, 22];
+var sorted = quicksort(unsorted);
+
+console.log(sorted)
 ```
 
 14) Destructuring
@@ -402,6 +427,24 @@ https://www.smashingmagazine.com/2012/06/introduction-to-javascript-unit-testing
 - https://www.toptal.com/jquery/interview-questions
 - https://www.tutorialspoint.com/jquery/jquery_interview_questions.htm
 - https://career.guru99.com/top-50-jquery-interview-questions/
+
+```
+$("button").click(function(){
+    $.get("demo_test.asp", function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+});
+$("button").click(function(){
+    $.post("demo_test_post.asp",
+    {
+        name: "Donald Duck",
+        city: "Duckburg"
+    },
+    function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+});
+```
 
 ## Angular specific questions
 
