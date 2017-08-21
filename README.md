@@ -117,7 +117,7 @@ console.log(iterator.next());// {value: undefined, done: true}
 ``` 
 
 1) Context ( this ) in js.
-- 'this' відноситься до об'єкта, з якого він був викликаний.
+- this залежить від контексту виклику функції.
 - 1) простий викрик функції 
 ```
 function f() {
