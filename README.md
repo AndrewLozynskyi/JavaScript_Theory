@@ -33,6 +33,29 @@
 - https://career.guru99.com/top-85-javascript-interview-questions/
 - https://github.com/nishant8BITS/123-Essential-JavaScript-Interview-Question
 
+1.1) Arrow function (використовує батьківський this)
+```
+var X = function() {
+	var that = this;
+	this.val = 1;
+	setTimeout(function(){
+		that.val++;
+		console.log(that.val);
+	},1)	
+};
+var xx = new X();
+```
+```
+var X = function() {
+	this.val = 1;
+	setTimeout(() => {
+		this.val++;
+		console.log(this.val);
+	},1)	
+};
+var xx = new X();
+```
+
 1) Context ( this ) in js.
 - 'this' відноситься до об'єкта, з якого він був викликаний.
 - 1) простий викрик функції 
