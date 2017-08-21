@@ -107,7 +107,7 @@ var addToThis = function(a){
 };
 
 addToThis.call(obj, 3); // 5
-
+```
 - apply 
 
 ```
