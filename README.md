@@ -55,6 +55,16 @@ var X = function() {
 };
 var xx = new X();
 ```
+1.2) Iterators
+```
+let myArray = [1,2,3];
+let iterator = myArray[Symbol.iterator]();
+
+console.log(iterator.next());// {value: 1, done: false}
+console.log(iterator.next());// {value: 2, done: false}
+console.log(iterator.next());// {value: 3, done: false}
+console.log(iterator.next());// {value: undefined, done: true}
+``` 
 
 1) Context ( this ) in js.
 - 'this' відноситься до об'єкта, з якого він був викликаний.
