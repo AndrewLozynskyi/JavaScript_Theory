@@ -136,6 +136,20 @@ cound(3);//5
 ``` 
 http://getinstance.info/articles/javascript/call-apply-and-bind-functions/
 
+2.2) Prototype inheritence
+```
+let Car = function(model) {
+	this.model = model;
+};
+
+Car.prototype.getModel = function() {
+	return this.model;
+}
+
+let nisan = new Car('nisan');
+console.log(nisan.getModel());
+```
+
 3) Closures
 - Замикання -- це функції, які памятають середовище, в якому вони були створені. (область видимості функцій, змінних,...)
 
