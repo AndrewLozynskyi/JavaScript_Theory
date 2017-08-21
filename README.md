@@ -33,6 +33,20 @@
 - https://career.guru99.com/top-85-javascript-interview-questions/
 - https://github.com/nishant8BITS/123-Essential-JavaScript-Interview-Question
 
+1.1.1) callback function
+```
+let x = function () {
+	console.log("this is callback function");
+}
+
+var y = function (callback) {
+	console.log("first function");
+	callback();
+}
+
+y(x);
+```
+
 1.1) Arrow function (використовує батьківський this)
 ```
 var X = function() {
