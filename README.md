@@ -143,7 +143,7 @@ var o = {
 }
 console.log(o.f() === o); // true
 ``` 
-- 4) В методі apply, call
+- 4) В методі apply, call дозволяють задати контекст для виконання функції.
 ```
 function f() {
 }
