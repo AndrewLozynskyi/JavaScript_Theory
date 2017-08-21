@@ -66,6 +66,22 @@ console.log(iterator.next());// {value: 3, done: false}
 console.log(iterator.next());// {value: undefined, done: true}
 ``` 
 
+1.2) Generators
+```
+function *generator() {
+	yield 1;
+	yield 2;
+	yield 3;	
+}
+
+let iterator = generator();
+
+console.log(iterator.next());// {value: 1, done: false}
+console.log(iterator.next());// {value: 2, done: false}
+console.log(iterator.next());// {value: 3, done: false}
+console.log(iterator.next());// {value: undefined, done: true}
+``` 
+
 1) Context ( this ) in js.
 - 'this' відноситься до об'єкта, з якого він був викликаний.
 - 1) простий викрик функції 
