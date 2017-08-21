@@ -150,6 +150,25 @@ let nisan = new Car('nisan');
 console.log(nisan.getModel());
 ```
 
+2.3) Promise
+```
+let promise = new Promise(function(resolve, reject) {
+	// some doing with true of false 
+	let done = false;
+	if (done) {
+		resolve('done');
+	} else {
+		reject('not Done');
+	}
+});
+
+promise.then(function(done) {
+	console.log(done);
+}).catch(function(not done) {
+	console.log(not done);
+})
+```
+
 3) Closures
 - Замикання -- це функції, які памятають середовище, в якому вони були створені. (область видимості функцій, змінних,...)
 
