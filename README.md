@@ -69,6 +69,26 @@ var X = function() {
 };
 var xx = new X();
 ```
+
+1.2.1) Деструктуризація es6
+```
+var a, b, rest;
+[a, b] = [10, 20];
+console.log(a); // 10
+console.log(b); // 20
+
+//
+var o = {p: 42, q: true};
+var {p, q} = o;
+
+console.log(p); // 42
+console.log(q); // true
+```
+Присвоєння окремо від оголошення
+```
+var a, b;
+({a, b} = {a: 1, b: 2});
+```
 1.2) Iterators
 ```
 let myArray = [1,2,3];
