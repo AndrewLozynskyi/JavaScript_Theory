@@ -99,44 +99,40 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 - сall 
 ```
-func.call(context, arg1, arg2, ...); // context = this
-``` 
-```
-var user = {
-  firstName: "Василий",
-  surname: "Петров",
-  patronym: "Иванович"
+var obj = {
+	num: 2
+};
+var addToThis = function(a){
+	return this.num + a;
 };
 
-function showFullName(firstPart, lastPart) {
-  alert( this.firstPart + " " + this.lastPart );
-}
+addToThis.call(obj, 3); // 5
 
-// f.call(контекст, аргумент1, аргумент2, ...)
-showFullName.call(user, 'firstName', 'surname') // "Василий Петров"
-showFullName.call(user, 'firstName', 'patronym') // "Василий Иванович"
-``` 
 - apply 
 
 ```
-func.apply(context, [arg1, arg2, ...]); // context = this
+var obj = {
+	num: 2
+};
+var addToThis = function(a){
+	return this.num + a;
+};
+
+addToThis.apply(obj, [3]); // 5
 ``` 
 -- bind
 bind() дозволяє нам вказати силку обєкт зі значенням this, коли функція буде викликана.
 ```
-var users = {
-  data: [
-      {name: 'John Smith'},
-      {name: 'Ellen Simons'}
-  ],
+var obj = {
+	num: 2
+};
+var addToThis = function(a){
+	return this.num + a;
+};
 
-   showFirst: function (event) {
-       console.log(this.data[0].name);
-   }
-}
- 
-$('button').click(users.showFirst); // this.data is undefined
-$("button").click(users.showFirst.bind(users));
+var bound = addToThis.bind(obj);
+
+cound(3);//5
 ``` 
 http://getinstance.info/articles/javascript/call-apply-and-bind-functions/
 
