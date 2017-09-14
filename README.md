@@ -32,7 +32,14 @@
 # JavaScript
 - https://career.guru99.com/top-85-javascript-interview-questions/
 - https://github.com/nishant8BITS/123-Essential-JavaScript-Interview-Question
-
+```
+var a=2;
+console.log(++a);//3
+console.log(a++);//3
+console.log(++a);//5
+console.log(a++);//5
+console.log(a);//6
+```
 1.1.1) callback function
 ```
 let x = function () {
